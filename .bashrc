@@ -9,7 +9,7 @@ function setPrompt () {
     GREEN_B="\[\e[1;32m\]"
     BLUE_B="\[\e[1;37m\]"
     NO_COLOUR="\[\e[0m\]"
-    MY_PWD=$(getpwd)
+    MY_PWD=$(getPwd)
     MY_GIT=$(parseGitBranch)
     PS1="$GREEN_B$MY_PWD$YELLOW_B$MY_GIT $NO_COLOUR\$ "
 }
